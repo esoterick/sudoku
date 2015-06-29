@@ -6,6 +6,6 @@ import System.Environment
 
 -- | 'main' runs the main program
 main :: IO ()
-main = getArgs >>= print . haqify . head
+main = getArgs >>= print . sudoku . head
 
-haqify s = "Haq! " ++ s
+sudoku s = "Sudoku! " ++ s
